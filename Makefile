@@ -12,5 +12,10 @@ count:
 extract:
 	python3 scripts/extract_validate_messages.py
 
-test: proto-go
+# 仅单元测试，不依赖 testdata/pb（未提交的生成代码）
+test-unit:
 	go test ./translator/... -v
+
+# 含 integration 测试（需先 make proto-go 生成 testdata/pb）
+test: proto-go
+	go test -tags=integration ./translator/... -v
