@@ -1,5 +1,7 @@
 # protovalidate-translator
 
+**Read in:** English | [中文](README.zh.md)
+
 Localized messages for [protovalidate](https://github.com/bufbuild/protovalidate) rule IDs. Use with [go-i18n](https://github.com/nicksnyder/go-i18n) and template placeholders such as `{{.Value}}`.
 
 ## Install
@@ -117,18 +119,18 @@ Message IDs follow the rule IDs from `buf/validate` (e.g. `float.lt`, `string.mi
 
 ## Development
 
-- **主库**（本仓库根目录）：仅包含可被外部 import 的 `translator` 包，无测试、不依赖生成的 pb，`go build ./...` 与 `go mod tidy` 即可通过。
-- **测试与示例** 均在 `examples/` 下，且 **examples 使用独立 `go.mod`**，避免主库引用不存在的 pb 包。
+- **Main module** (repo root): Contains only the importable `translator` package, with no tests and no dependency on generated pb files. `go build ./...` and `go mod tidy` work out of the box.
+- **Tests and examples** live under `examples/`, which has its **own `go.mod`** so the main module never references generated pb code.
 
 ```bash
-make test              # 主库：仅构建
-cd examples && make proto-go && go test ./... -v   # 生成 pb 并运行全部测试
-# 或
-make test-examples     # 同上（在仓库根目录执行）
-make extract           # 从 validate.proto 重新生成 en.json
+make test              # Main module: build only
+cd examples && make proto-go && go test ./... -v   # Generate pb and run all tests
+# or from repo root:
+make test-examples     # Same as above
+make extract           # Regenerate en.json from validate.proto
 ```
 
-在 `examples` 目录下执行 `go mod tidy` 和 `go test ./...` 即可；集成测试依赖 `examples/translate/testdata/pb`，需先执行 `make proto-go`（在 examples 目录）。
+From the `examples` directory, run `go mod tidy` and `go test ./...` as needed. Integration tests require `examples/translate/testdata/pb`; run `make proto-go` in `examples` first.
 
 ## License
 
