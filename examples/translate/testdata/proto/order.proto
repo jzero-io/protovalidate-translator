@@ -4,7 +4,7 @@ package testdata;
 
 import "third_party/buf/validate/validate.proto";
 
-option go_package = "github.com/jzero-io/protovalidate-translator/translator/testdata/pb";
+option go_package = "github.com/jzero-io/protovalidate-translator/examples/translate/testdata/pb";
 
 message Order {
   string id = 1 [(buf.validate.field).string.min_len = 4];

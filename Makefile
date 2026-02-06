@@ -1,21 +1,13 @@
-# 生成 Go pb 文件到 translator/testdata/pb/（需安装 protoc-gen-go: go install google.golang.org/protobuf/cmd/protoc-gen-go@latest）
-proto-go:
-	@which protoc-gen-go >/dev/null 2>&1 || { echo "need protoc-gen-go: go install google.golang.org/protobuf/cmd/protoc-gen-go@latest"; exit 1; }
-	@mkdir -p translator/testdata/pb
-	protoc -I third_party -I. --go_out=. --go_opt=module=github.com/jzero-io/protovalidate-translator \
-		translator/testdata/proto/user.proto \
-		translator/testdata/proto/order.proto
-
 count:
 	grep -v '^\s*//' third_party/buf/validate/validate.proto | grep -o 'id:\s*"[^"]*"' | wc -l
 
 extract:
 	python3 scripts/extract_validate_messages.py
 
-# 仅单元测试，不依赖 testdata/pb（未提交的生成代码）
-test-unit:
-	go test ./translator/... -v
+# 主库无测试，仅确保构建通过
+test:
+	go build ./...
 
-# 含 integration 测试（需先 make proto-go 生成 testdata/pb）
-test: proto-go
-	go test -tags=integration ./translator/... -v
+# 在 examples 目录运行全部测试（单元 + 依赖 pb 的集成测试）
+test-examples:
+	cd examples && make proto-go && go test ./... -v

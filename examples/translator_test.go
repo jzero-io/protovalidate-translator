@@ -1,15 +1,16 @@
-package translator
+package translator_test
 
 import (
 	"path/filepath"
 	"testing"
 
+	"github.com/jzero-io/protovalidate-translator/translator"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 	"golang.org/x/text/language"
 )
 
 func newTestBundle() *i18n.Bundle {
-	bundle := NewBundle()
+	bundle := translator.NewBundle()
 	bundle.AddMessages(language.English,
 		&i18n.Message{ID: "float.lt", Other: "value must be less than {{.Value}}"},
 		&i18n.Message{ID: "float.finite", Other: "value must be finite"},
@@ -23,14 +24,14 @@ func newTestBundle() *i18n.Bundle {
 
 func TestTranslate_byLang(t *testing.T) {
 	bundle := newTestBundle()
-	en, err := Translate(bundle, "en", "", "float.lt", map[string]any{"Value": 100})
+	en, err := translator.Translate(bundle, "en", "", "float.lt", map[string]any{"Value": 100})
 	if err != nil {
 		t.Fatal(err)
 	}
 	if en != "value must be less than 100" {
 		t.Errorf("en: got %q", en)
 	}
-	zh, err := Translate(bundle, "zh", "", "float.lt", map[string]any{"Value": 100})
+	zh, err := translator.Translate(bundle, "zh", "", "float.lt", map[string]any{"Value": 100})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -41,7 +42,7 @@ func TestTranslate_byLang(t *testing.T) {
 
 func TestTranslate_fallbackToDefaultLang(t *testing.T) {
 	bundle := newTestBundle()
-	out, err := Translate(bundle, "fr", "en", "float.lt", map[string]any{"Value": 1})
+	out, err := translator.Translate(bundle, "fr", "en", "float.lt", map[string]any{"Value": 1})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -52,14 +53,14 @@ func TestTranslate_fallbackToDefaultLang(t *testing.T) {
 
 func TestTranslate_fallbackIdInDefaultOnly(t *testing.T) {
 	bundle := newTestBundle()
-	out, err := Translate(bundle, "zh", "en", "float.lt", map[string]any{"Value": 10})
+	out, err := translator.Translate(bundle, "zh", "en", "float.lt", map[string]any{"Value": 10})
 	if err != nil {
 		t.Fatal(err)
 	}
 	if out != "值必须小于 10" {
 		t.Errorf("zh float.lt: got %q", out)
 	}
-	out2, err := Translate(bundle, "zh", "en", "float.finite", nil)
+	out2, err := translator.Translate(bundle, "zh", "en", "float.finite", nil)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -70,7 +71,7 @@ func TestTranslate_fallbackIdInDefaultOnly(t *testing.T) {
 
 func TestTranslate_missingIdReturnsId(t *testing.T) {
 	bundle := newTestBundle()
-	out, err := Translate(bundle, "en", "", "nonexistent", nil)
+	out, err := translator.Translate(bundle, "en", "", "nonexistent", nil)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -80,11 +81,11 @@ func TestTranslate_missingIdReturnsId(t *testing.T) {
 }
 
 func TestLoadBundleFromFS(t *testing.T) {
-	bundle, err := LoadBundleFromFS(LocalesFS, DefaultLocaleDir)
+	bundle, err := translator.LoadBundleFromFS(translator.LocalesFS, translator.DefaultLocaleDir)
 	if err != nil {
 		t.Fatal(err)
 	}
-	out, err := Translate(bundle, "en", "", "float.finite", nil)
+	out, err := translator.Translate(bundle, "en", "", "float.finite", nil)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -94,7 +95,7 @@ func TestLoadBundleFromFS(t *testing.T) {
 }
 
 func TestDefaultBundle(t *testing.T) {
-	bundle, err := DefaultBundle()
+	bundle, err := translator.DefaultBundle()
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -104,7 +105,7 @@ func TestDefaultBundle(t *testing.T) {
 }
 
 func TestTranslateDefault(t *testing.T) {
-	out, err := TranslateDefault("en", "float.lt", map[string]any{"Value": 5})
+	out, err := translator.TranslateDefault("en", "float.lt", map[string]any{"Value": 5})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -114,14 +115,14 @@ func TestTranslateDefault(t *testing.T) {
 }
 
 func TestLoadBundleFromDir_missing(t *testing.T) {
-	_, err := LoadBundleFromDir(filepath.Join("testdata", "missing"))
+	_, err := translator.LoadBundleFromDir(filepath.Join("testdata", "missing"))
 	if err == nil {
 		t.Fatal("expected error for missing dir")
 	}
 }
 
 func TestTranslate_nilBundle_returnsId(t *testing.T) {
-	out, err := Translate(nil, "en", "", "some.id", nil)
+	out, err := translator.Translate(nil, "en", "", "some.id", nil)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -132,7 +133,7 @@ func TestTranslate_nilBundle_returnsId(t *testing.T) {
 
 func TestTranslate_emptyLang_usesDefaultLang(t *testing.T) {
 	bundle := newTestBundle()
-	out, err := Translate(bundle, "", "en", "float.lt", map[string]any{"Value": 1})
+	out, err := translator.Translate(bundle, "", "en", "float.lt", map[string]any{"Value": 1})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -143,7 +144,7 @@ func TestTranslate_emptyLang_usesDefaultLang(t *testing.T) {
 
 func TestTranslate_emptyLang_noDefault_returnsId(t *testing.T) {
 	bundle := newTestBundle()
-	out, err := Translate(bundle, "", "", "float.lt", nil)
+	out, err := translator.Translate(bundle, "", "", "float.lt", nil)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -154,14 +155,14 @@ func TestTranslate_emptyLang_noDefault_returnsId(t *testing.T) {
 
 func TestMustTranslate_success(t *testing.T) {
 	bundle := newTestBundle()
-	out := MustTranslate(bundle, "en", "", "float.finite", nil)
+	out := translator.MustTranslate(bundle, "en", "", "float.finite", nil)
 	if out != "value must be finite" {
 		t.Errorf("got %q", out)
 	}
 }
 
 func TestMustTranslateDefault_success(t *testing.T) {
-	out := MustTranslateDefault("zh", "float.lt", map[string]any{"Value": 10})
+	out := translator.MustTranslateDefault("zh", "float.lt", map[string]any{"Value": 10})
 	if out == "float.lt" {
 		t.Errorf("expected zh translation from default bundle")
 	}
@@ -169,12 +170,12 @@ func TestMustTranslateDefault_success(t *testing.T) {
 
 func TestAddDefaultMessage_invalidLang_noPanic(t *testing.T) {
 	// Invalid lang is ignored; must not panic
-	AddDefaultMessage("", "custom.id", "template")
-	AddDefaultMessage("not-a-bcp47-tag!!!", "custom.id2", "template")
+	translator.AddDefaultMessage("", "custom.id", "template")
+	translator.AddDefaultMessage("not-a-bcp47-tag!!!", "custom.id2", "template")
 }
 
 func TestBundleCustomizer_extendsBundle(t *testing.T) {
-	bundle, err := LoadBundleFromFS(LocalesFS, DefaultLocaleDir)
+	bundle, err := translator.LoadBundleFromFS(translator.LocalesFS, translator.DefaultLocaleDir)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -186,7 +187,7 @@ func TestBundleCustomizer_extendsBundle(t *testing.T) {
 	if err := customizer(bundle); err != nil {
 		t.Fatal(err)
 	}
-	out, err := Translate(bundle, "en", "", "custom.rule", map[string]any{"Value": 42})
+	out, err := translator.Translate(bundle, "en", "", "custom.rule", map[string]any{"Value": 42})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -196,7 +197,7 @@ func TestBundleCustomizer_extendsBundle(t *testing.T) {
 }
 
 func TestTranslateDefault_zhTW(t *testing.T) {
-	out, err := TranslateDefault("zh-TW", "float.lt", map[string]any{"Value": 100})
+	out, err := translator.TranslateDefault("zh-TW", "float.lt", map[string]any{"Value": 100})
 	if err != nil {
 		t.Fatal(err)
 	}

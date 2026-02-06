@@ -1,19 +1,17 @@
-//go:build integration
-
-package translator
+package translator_test
 
 import (
 	"errors"
 	"testing"
 
 	protovalidate "buf.build/go/protovalidate"
+	"github.com/jzero-io/protovalidate-translator/examples/translate/testdata/pb"
+	"github.com/jzero-io/protovalidate-translator/translator"
 	"google.golang.org/protobuf/reflect/protoreflect"
-
-	pb "github.com/jzero-io/protovalidate-translator/translator/testdata/pb"
 )
 
-// TestValidateProto_GeneratedGo 使用 protoc 生成的 Go pb 类型进行校验与翻译测试。
-// 需先执行 make proto-go 生成 translator/testdata/pb/*.pb.go。
+// TestValidateProto_GeneratedGo 使用 examples 下生成的 Go pb 类型进行校验与翻译测试。
+// 需先执行 make proto-go（在 examples 目录）生成 translate/testdata/pb/*.pb.go。
 func TestValidateProto_GeneratedGo(t *testing.T) {
 	validator, err := protovalidate.New(
 		protovalidate.WithMessages(&pb.User{}, &pb.Order{}),
@@ -72,14 +70,13 @@ func assertZhTranslations(t *testing.T, err error) {
 	for _, violation := range valErr.Violations {
 		ruleID := violation.Proto.GetRuleId()
 		data := map[string]any{"Value": normalizeRuleValue(violation.RuleValue)}
-		zh, err := TranslateDefault("zh", ruleID, data)
+		zh, err := translator.TranslateDefault("zh", ruleID, data)
 		if err != nil {
 			t.Fatalf("translate %s: %v", ruleID, err)
 		}
 		if zh == ruleID {
 			t.Fatalf("missing zh translation for %s", ruleID)
 		}
-		// 获取违反规则的字段路径（如 "email"、"name"；嵌套时为 "user.address"）
 		fieldPath := ""
 		if fp := violation.Proto.GetField(); fp != nil {
 			fieldPath = protovalidate.FieldPathString(fp)

@@ -117,13 +117,18 @@ Message IDs follow the rule IDs from `buf/validate` (e.g. `float.lt`, `string.mi
 
 ## Development
 
+- **主库**（本仓库根目录）：仅包含可被外部 import 的 `translator` 包，无测试、不依赖生成的 pb，`go build ./...` 与 `go mod tidy` 即可通过。
+- **测试与示例** 均在 `examples/` 下，且 **examples 使用独立 `go.mod`**，避免主库引用不存在的 pb 包。
+
 ```bash
-make test-unit     # unit tests only (no generated pb; safe after clone)
-make test          # generate testdata/pb + run all tests including protovalidate integration
-make extract       # regenerate en.json from third_party/buf/validate/validate.proto
+make test              # 主库：仅构建
+cd examples && make proto-go && go test ./... -v   # 生成 pb 并运行全部测试
+# 或
+make test-examples     # 同上（在仓库根目录执行）
+make extract           # 从 validate.proto 重新生成 en.json
 ```
 
-The protovalidate integration tests live in a file built only with `-tags=integration`, so `go build` and `go test ./translator/...` without the tag do not require the (uncommitted) generated `translator/testdata/pb` package. This keeps `go mod tidy` and CI green for consumers who do not run `make proto-go`.
+在 `examples` 目录下执行 `go mod tidy` 和 `go test ./...` 即可；集成测试依赖 `examples/translate/testdata/pb`，需先执行 `make proto-go`（在 examples 目录）。
 
 ## License
 
