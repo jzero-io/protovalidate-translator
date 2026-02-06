@@ -1,0 +1,10 @@
+[
+  {
+    "id": "float.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "float.finite",
+    "translation": "value must be finite"
+  }
+]

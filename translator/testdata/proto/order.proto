@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package testdata;
+
+import "third_party/buf/validate/validate.proto";
+
+option go_package = "github.com/jzero-io/protovalidate-translator/translator/testdata/pb";
+
+message Order {
+  string id = 1 [(buf.validate.field).string.min_len = 4];
+  int32 quantity = 2 [(buf.validate.field).int32.gt = 0];
+}

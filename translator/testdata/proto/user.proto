@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package testdata;
+
+import "third_party/buf/validate/validate.proto";
+
+option go_package = "github.com/jzero-io/protovalidate-translator/translator/testdata/pb";
+
+message User {
+  string email = 1 [(buf.validate.field).string.email = true];
+  int32 age = 2 [(buf.validate.field).int32.gt = 17];
+  string name = 3 [(buf.validate.field).string.min_len = 2];
+}

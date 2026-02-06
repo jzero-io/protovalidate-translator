@@ -1,0 +1,10 @@
+[
+  {
+    "id": "float.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "string.min_len",
+    "translation": "长度至少为 {{.Value}}"
+  }
+]

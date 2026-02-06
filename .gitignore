@@ -1,0 +1,23 @@
+# 生成文件不提交，由 make proto-descriptor / make proto-go 生成，减小仓库体积
+translator/testdata/descriptor.pb
+translator/testdata/pb/*.pb.go
+
+# 系统与 IDE
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/*.json
+!.vscode/setting.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Go
+*.exe
+*.test
+coverage.out
+AGENTS.md
+.DS_Store

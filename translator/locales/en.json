@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "bool.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "bytes.const",
+    "translation": "value must be {{.Value}}"
+  },
+  {
+    "id": "bytes.contains",
+    "translation": "value does not contain {{.Value}}"
+  },
+  {
+    "id": "bytes.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "bytes.ip",
+    "translation": "value must be a valid IP address"
+  },
+  {
+    "id": "bytes.ip_empty",
+    "translation": "value is empty, which is not a valid IP address"
+  },
+  {
+    "id": "bytes.ipv4",
+    "translation": "value must be a valid IPv4 address"
+  },
+  {
+    "id": "bytes.ipv4_empty",
+    "translation": "value is empty, which is not a valid IPv4 address"
+  },
+  {
+    "id": "bytes.ipv6",
+    "translation": "value must be a valid IPv6 address"
+  },
+  {
+    "id": "bytes.ipv6_empty",
+    "translation": "value is empty, which is not a valid IPv6 address"
+  },
+  {
+    "id": "bytes.len",
+    "translation": "value length must be {{.Value}} bytes"
+  },
+  {
+    "id": "bytes.max_len",
+    "translation": "value must be at most {{.Value}} bytes"
+  },
+  {
+    "id": "bytes.min_len",
+    "translation": "value length must be at least {{.Value}} bytes"
+  },
+  {
+    "id": "bytes.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "bytes.pattern",
+    "translation": "value must match regex pattern {{.Value}}"
+  },
+  {
+    "id": "bytes.prefix",
+    "translation": "value does not have prefix {{.Value}}"
+  },
+  {
+    "id": "bytes.suffix",
+    "translation": "value does not have suffix {{.Value}}"
+  },
+  {
+    "id": "double.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "double.finite",
+    "translation": "value must be finite"
+  },
+  {
+    "id": "double.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "double.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "double.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "double.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "double.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "double.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "double.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "double.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "double.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "double.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "double.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "double.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "double.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "double.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "duration.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "duration.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "duration.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "duration.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "duration.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "duration.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "duration.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "duration.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "duration.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "duration.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "duration.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "duration.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "duration.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "duration.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "duration.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "enum.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "enum.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "enum.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "fixed32.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "fixed32.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "fixed32.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "fixed32.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "fixed32.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "fixed32.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "fixed32.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "fixed32.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "fixed32.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "fixed32.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "fixed32.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "fixed32.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "fixed32.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "fixed32.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "fixed32.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "fixed64.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "fixed64.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "fixed64.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "fixed64.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "fixed64.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "fixed64.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "fixed64.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "fixed64.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "fixed64.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "fixed64.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "fixed64.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "fixed64.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "fixed64.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "fixed64.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "fixed64.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "float.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "float.finite",
+    "translation": "value must be finite"
+  },
+  {
+    "id": "float.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "float.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "float.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "float.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "float.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "float.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "float.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "float.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "float.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "float.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "float.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "float.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "float.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "float.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "int32.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "int32.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "int32.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "int32.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "int32.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "int32.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "int32.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "int32.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "int32.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "int32.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "int32.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "int32.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "int32.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "int32.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "int32.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "int64.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "int64.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "int64.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "int64.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "int64.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "int64.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "int64.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "int64.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "int64.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "int64.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "int64.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "int64.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "int64.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "int64.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "int64.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "map.max_pairs",
+    "translation": "map must be at most {{.Value}} entries"
+  },
+  {
+    "id": "map.min_pairs",
+    "translation": "map must be at least {{.Value}} entries"
+  },
+  {
+    "id": "repeated.max_items",
+    "translation": "value must contain no more than {{.Value}} item(s)"
+  },
+  {
+    "id": "repeated.min_items",
+    "translation": "value must contain at least {{.Value}} item(s)"
+  },
+  {
+    "id": "repeated.unique",
+    "translation": "repeated value must contain unique items"
+  },
+  {
+    "id": "sfixed32.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sfixed32.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "sfixed32.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "sfixed32.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sfixed32.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "sfixed64.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sfixed64.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "sfixed64.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "sfixed64.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sfixed64.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "sint32.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "sint32.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "sint32.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "sint32.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "sint32.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sint32.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sint32.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "sint32.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "sint32.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "sint32.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sint32.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sint32.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "sint32.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "sint32.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sint32.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "sint64.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "sint64.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "sint64.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "sint64.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "sint64.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sint64.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sint64.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "sint64.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "sint64.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "sint64.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sint64.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sint64.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "sint64.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "sint64.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "sint64.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "string.address",
+    "translation": "value must be a valid hostname, or ip address"
+  },
+  {
+    "id": "string.address_empty",
+    "translation": "value is empty, which is not a valid hostname, or ip address"
+  },
+  {
+    "id": "string.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "string.contains",
+    "translation": "value does not contain substring {{.Value}}"
+  },
+  {
+    "id": "string.email",
+    "translation": "value must be a valid email address"
+  },
+  {
+    "id": "string.email_empty",
+    "translation": "value is empty, which is not a valid email address"
+  },
+  {
+    "id": "string.host_and_port",
+    "translation": "value must be a valid host (hostname or IP address) and port pair"
+  },
+  {
+    "id": "string.host_and_port_empty",
+    "translation": "value is empty, which is not a valid host and port pair"
+  },
+  {
+    "id": "string.hostname",
+    "translation": "value must be a valid hostname"
+  },
+  {
+    "id": "string.hostname_empty",
+    "translation": "value is empty, which is not a valid hostname"
+  },
+  {
+    "id": "string.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "string.ip",
+    "translation": "value must be a valid IP address"
+  },
+  {
+    "id": "string.ip_empty",
+    "translation": "value is empty, which is not a valid IP address"
+  },
+  {
+    "id": "string.ip_prefix",
+    "translation": "value must be a valid IP prefix"
+  },
+  {
+    "id": "string.ip_prefix_empty",
+    "translation": "value is empty, which is not a valid IP prefix"
+  },
+  {
+    "id": "string.ip_with_prefixlen",
+    "translation": "value must be a valid IP prefix"
+  },
+  {
+    "id": "string.ip_with_prefixlen_empty",
+    "translation": "value is empty, which is not a valid IP prefix"
+  },
+  {
+    "id": "string.ipv4",
+    "translation": "value must be a valid IPv4 address"
+  },
+  {
+    "id": "string.ipv4_empty",
+    "translation": "value is empty, which is not a valid IPv4 address"
+  },
+  {
+    "id": "string.ipv4_prefix",
+    "translation": "value must be a valid IPv4 prefix"
+  },
+  {
+    "id": "string.ipv4_prefix_empty",
+    "translation": "value is empty, which is not a valid IPv4 prefix"
+  },
+  {
+    "id": "string.ipv4_with_prefixlen",
+    "translation": "value must be a valid IPv4 address with prefix length"
+  },
+  {
+    "id": "string.ipv4_with_prefixlen_empty",
+    "translation": "value is empty, which is not a valid IPv4 address with prefix length"
+  },
+  {
+    "id": "string.ipv6",
+    "translation": "value must be a valid IPv6 address"
+  },
+  {
+    "id": "string.ipv6_empty",
+    "translation": "value is empty, which is not a valid IPv6 address"
+  },
+  {
+    "id": "string.ipv6_prefix",
+    "translation": "value must be a valid IPv6 prefix"
+  },
+  {
+    "id": "string.ipv6_prefix_empty",
+    "translation": "value is empty, which is not a valid IPv6 prefix"
+  },
+  {
+    "id": "string.ipv6_with_prefixlen",
+    "translation": "value must be a valid IPv6 address with prefix length"
+  },
+  {
+    "id": "string.ipv6_with_prefixlen_empty",
+    "translation": "value is empty, which is not a valid IPv6 address with prefix length"
+  },
+  {
+    "id": "string.len",
+    "translation": "value length must be {{.Value}} characters"
+  },
+  {
+    "id": "string.len_bytes",
+    "translation": "value length must be {{.Value}} bytes"
+  },
+  {
+    "id": "string.max_bytes",
+    "translation": "value length must be at most {{.Value}} bytes"
+  },
+  {
+    "id": "string.max_len",
+    "translation": "value length must be at most {{.Value}} characters"
+  },
+  {
+    "id": "string.min_bytes",
+    "translation": "value length must be at least {{.Value}} bytes"
+  },
+  {
+    "id": "string.min_len",
+    "translation": "value length must be at least {{.Value}} characters"
+  },
+  {
+    "id": "string.not_contains",
+    "translation": "value contains substring {{.Value}}"
+  },
+  {
+    "id": "string.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "string.pattern",
+    "translation": "value does not match regex pattern {{.Value}}"
+  },
+  {
+    "id": "string.prefix",
+    "translation": "value does not have prefix {{.Value}}"
+  },
+  {
+    "id": "string.suffix",
+    "translation": "value does not have suffix {{.Value}}"
+  },
+  {
+    "id": "string.tuuid",
+    "translation": "value must be a valid trimmed UUID"
+  },
+  {
+    "id": "string.tuuid_empty",
+    "translation": "value is empty, which is not a valid trimmed UUID"
+  },
+  {
+    "id": "string.uri",
+    "translation": "value must be a valid URI"
+  },
+  {
+    "id": "string.uri_empty",
+    "translation": "value is empty, which is not a valid URI"
+  },
+  {
+    "id": "string.uri_ref",
+    "translation": "value must be a valid URI Reference"
+  },
+  {
+    "id": "string.uuid",
+    "translation": "value must be a valid UUID"
+  },
+  {
+    "id": "string.uuid_empty",
+    "translation": "value is empty, which is not a valid UUID"
+  },
+  {
+    "id": "string.well_known_regex.header_name",
+    "translation": "value must be a valid HTTP header name"
+  },
+  {
+    "id": "string.well_known_regex.header_name_empty",
+    "translation": "value is empty, which is not a valid HTTP header name"
+  },
+  {
+    "id": "string.well_known_regex.header_value",
+    "translation": "value must be a valid HTTP header value"
+  },
+  {
+    "id": "timestamp.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "timestamp.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "timestamp.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "timestamp.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "timestamp.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "timestamp.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "timestamp.gt_now",
+    "translation": "value must be greater than now"
+  },
+  {
+    "id": "timestamp.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "timestamp.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "timestamp.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "timestamp.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "timestamp.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "timestamp.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "timestamp.lt_now",
+    "translation": "value must be less than now"
+  },
+  {
+    "id": "timestamp.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "timestamp.within",
+    "translation": "value must be within {{.Value}} of now"
+  },
+  {
+    "id": "uint32.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "uint32.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "uint32.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "uint32.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "uint32.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "uint32.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "uint32.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "uint32.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "uint32.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "uint32.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "uint32.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "uint32.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "uint32.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "uint32.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "uint32.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  },
+  {
+    "id": "uint64.const",
+    "translation": "value must equal {{.Value}}"
+  },
+  {
+    "id": "uint64.gt",
+    "translation": "value must be greater than {{.Value}}"
+  },
+  {
+    "id": "uint64.gt_lt",
+    "translation": "value must be greater than {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "uint64.gt_lt_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "uint64.gt_lte",
+    "translation": "value must be greater than {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "uint64.gt_lte_exclusive",
+    "translation": "value must be greater than {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "uint64.gte",
+    "translation": "value must be greater than or equal to {{.Value}}"
+  },
+  {
+    "id": "uint64.gte_lt",
+    "translation": "value must be greater than or equal to {{.Value}} and less than {{.Value}}"
+  },
+  {
+    "id": "uint64.gte_lt_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than {{.Value}}"
+  },
+  {
+    "id": "uint64.gte_lte",
+    "translation": "value must be greater than or equal to {{.Value}} and less than or equal to {{.Value}}"
+  },
+  {
+    "id": "uint64.gte_lte_exclusive",
+    "translation": "value must be greater than or equal to {{.Value}} or less than or equal to {{.Value}}"
+  },
+  {
+    "id": "uint64.in",
+    "translation": "value must be in list {{.Value}}"
+  },
+  {
+    "id": "uint64.lt",
+    "translation": "value must be less than {{.Value}}"
+  },
+  {
+    "id": "uint64.lte",
+    "translation": "value must be less than or equal to {{.Value}}"
+  },
+  {
+    "id": "uint64.not_in",
+    "translation": "value must not be in list {{.Value}}"
+  }
+]

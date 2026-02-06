@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "bool.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "bytes.const",
+    "translation": "值必须是 {{.Value}}"
+  },
+  {
+    "id": "bytes.contains",
+    "translation": "值不包含 {{.Value}}"
+  },
+  {
+    "id": "bytes.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "bytes.ip",
+    "translation": "值必须是有效的 IP 地址"
+  },
+  {
+    "id": "bytes.ip_empty",
+    "translation": "值为空，不是有效的 IP 地址"
+  },
+  {
+    "id": "bytes.ipv4",
+    "translation": "值必须是有效的 IPv4 地址"
+  },
+  {
+    "id": "bytes.ipv4_empty",
+    "translation": "值为空，不是有效的 IPv4 地址"
+  },
+  {
+    "id": "bytes.ipv6",
+    "translation": "值必须是有效的 IPv6 地址"
+  },
+  {
+    "id": "bytes.ipv6_empty",
+    "translation": "值为空，不是有效的 IPv6 地址"
+  },
+  {
+    "id": "bytes.len",
+    "translation": "值长度必须为 {{.Value}} 字节"
+  },
+  {
+    "id": "bytes.max_len",
+    "translation": "值长度必须最多为 {{.Value}} 字节"
+  },
+  {
+    "id": "bytes.min_len",
+    "translation": "值长度必须至少为 {{.Value}} 字节"
+  },
+  {
+    "id": "bytes.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "bytes.pattern",
+    "translation": "值必须匹配正则表达式模式 {{.Value}}"
+  },
+  {
+    "id": "bytes.prefix",
+    "translation": "值没有前缀 {{.Value}}"
+  },
+  {
+    "id": "bytes.suffix",
+    "translation": "值没有后缀 {{.Value}}"
+  },
+  {
+    "id": "double.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "double.finite",
+    "translation": "值必须是有限的"
+  },
+  {
+    "id": "double.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "double.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "double.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "double.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "double.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "double.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "double.gte_lt",
+    "translation": "值必须大于或等于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "double.gte_lt_exclusive",
+    "translation": "值必须大于或等于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "double.gte_lte",
+    "translation": "值必须大于或等于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "double.gte_lte_exclusive",
+    "translation": "值必须大于或等于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "double.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "double.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "double.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "double.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "duration.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "duration.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "duration.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "duration.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "duration.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "duration.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "duration.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "duration.gte_lt",
+    "translation": "值必须大于或等于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "duration.gte_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "duration.gte_lte",
+    "translation": "值必须大于或等于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "duration.gte_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "duration.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "duration.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "duration.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "duration.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "enum.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "enum.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "enum.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "fixed32.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.gte_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.gte_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.gte_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.gte_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "fixed32.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "fixed32.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "fixed64.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.gte_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.gte_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.gte_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.gte_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "fixed64.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "fixed64.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "float.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "float.finite",
+    "translation": "值必须是有限的"
+  },
+  {
+    "id": "float.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "float.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "float.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "float.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "float.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "float.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "float.gte_lt",
+    "translation": "值必须大于或等于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "float.gte_lt_exclusive",
+    "translation": "值必须大于或等于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "float.gte_lte",
+    "translation": "值必须大于或等于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "float.gte_lte_exclusive",
+    "translation": "值必须大于或等于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "float.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "float.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "float.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "float.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "int32.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "int32.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "int32.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "int32.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "int32.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "int32.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "int32.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "int32.gte_lt",
+    "translation": "值必须大于或等于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "int32.gte_lt_exclusive",
+    "translation": "值必须大于或等于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "int32.gte_lte",
+    "translation": "值必须大于或等于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "int32.gte_lte_exclusive",
+    "translation": "值必须大于或等于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "int32.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "int32.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "int32.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "int32.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "int64.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "int64.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "int64.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "int64.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "int64.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "int64.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "int64.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "int64.gte_lt",
+    "translation": "值必须大于或等于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "int64.gte_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "int64.gte_lte",
+    "translation": "值必须大于或等于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "int64.gte_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "int64.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "int64.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "int64.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "int64.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "map.max_pairs",
+    "translation": "映射最多只能包含 {{.Value}} 个条目"
+  },
+  {
+    "id": "map.min_pairs",
+    "translation": "映射必须至少包含 {{.Value}} 个条目"
+  },
+  {
+    "id": "repeated.max_items",
+    "translation": "值必须最多包含 {{.Value}} 个项目"
+  },
+  {
+    "id": "repeated.min_items",
+    "translation": "值必须至少包含 {{.Value}} 个项目"
+  },
+  {
+    "id": "repeated.unique",
+    "translation": "重复的值必须包含唯一的项目"
+  },
+  {
+    "id": "sfixed32.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gte_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gte_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gte_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.gte_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "sfixed32.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed32.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "sfixed64.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gte_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gte_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gte_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.gte_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "sfixed64.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sfixed64.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "sint32.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "sint32.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "sint32.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "sint32.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "sint32.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sint32.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sint32.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "sint32.gte_lt",
+    "translation": "值必须大于或等于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "sint32.gte_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "sint32.gte_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sint32.gte_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sint32.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "sint32.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "sint32.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sint32.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "sint64.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "sint64.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "sint64.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "sint64.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "sint64.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sint64.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sint64.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "sint64.gte_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "sint64.gte_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "sint64.gte_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sint64.gte_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sint64.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "sint64.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "sint64.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "sint64.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "string.address",
+    "translation": "值必须是有效的主机名或 IP 地址"
+  },
+  {
+    "id": "string.address_empty",
+    "translation": "值为空，不是有效的主机名或 IP 地址"
+  },
+  {
+    "id": "string.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "string.contains",
+    "translation": "值不包含子字符串 {{.Value}}"
+  },
+  {
+    "id": "string.email",
+    "translation": "值必须是有效的电子邮件地址"
+  },
+  {
+    "id": "string.email_empty",
+    "translation": "值为空，不是有效的电子邮件地址"
+  },
+  {
+    "id": "string.host_and_port",
+    "translation": "值必须是有效的主机（主机名或 IP 地址）和端口对"
+  },
+  {
+    "id": "string.host_and_port_empty",
+    "translation": "值为空，不是有效的主机和端口对"
+  },
+  {
+    "id": "string.hostname",
+    "translation": "值必须是有效的主机名"
+  },
+  {
+    "id": "string.hostname_empty",
+    "translation": "值为空，不是有效的主机名"
+  },
+  {
+    "id": "string.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "string.ip",
+    "translation": "值必须是有效的 IP 地址"
+  },
+  {
+    "id": "string.ip_empty",
+    "translation": "值为空，不是有效的 IP 地址"
+  },
+  {
+    "id": "string.ip_prefix",
+    "translation": "值必须是有效的 IP 前缀"
+  },
+  {
+    "id": "string.ip_prefix_empty",
+    "translation": "值为空，不是有效的 IP 前缀"
+  },
+  {
+    "id": "string.ip_with_prefixlen",
+    "translation": "值必须是有效的 IP 前缀"
+  },
+  {
+    "id": "string.ip_with_prefixlen_empty",
+    "translation": "值为空，不是有效的 IP 前缀"
+  },
+  {
+    "id": "string.ipv4",
+    "translation": "值必须是有效的 IPv4 地址"
+  },
+  {
+    "id": "string.ipv4_empty",
+    "translation": "值为空，不是有效的 IPv4 地址"
+  },
+  {
+    "id": "string.ipv4_prefix",
+    "translation": "值必须是有效的 IPv4 前缀"
+  },
+  {
+    "id": "string.ipv4_prefix_empty",
+    "translation": "值为空，不是有效的 IPv4 前缀"
+  },
+  {
+    "id": "string.ipv4_with_prefixlen",
+    "translation": "值必须是有效的 IPv4 地址带前缀长度"
+  },
+  {
+    "id": "string.ipv4_with_prefixlen_empty",
+    "translation": "值为空，不是有效的 IPv4 地址带前缀长度"
+  },
+  {
+    "id": "string.ipv6",
+    "translation": "值必须是有效的 IPv6 地址"
+  },
+  {
+    "id": "string.ipv6_empty",
+    "translation": "值为空，不是有效的 IPv6 地址"
+  },
+  {
+    "id": "string.ipv6_prefix",
+    "translation": "值必须是有效的 IPv6 前缀"
+  },
+  {
+    "id": "string.ipv6_prefix_empty",
+    "translation": "值为空，不是有效的 IPv6 前缀"
+  },
+  {
+    "id": "string.ipv6_with_prefixlen",
+    "translation": "值必须是有效的 IPv6 地址带前缀长度"
+  },
+  {
+    "id": "string.ipv6_with_prefixlen_empty",
+    "translation": "值为空，不是有效的 IPv6 地址带前缀长度"
+  },
+  {
+    "id": "string.len",
+    "translation": "值长度必须为 {{.Value}} 个字符"
+  },
+  {
+    "id": "string.len_bytes",
+    "translation": "值长度必须为 {{.Value}} 字节"
+  },
+  {
+    "id": "string.max_bytes",
+    "translation": "值长度必须最多为 {{.Value}} 字节"
+  },
+  {
+    "id": "string.max_len",
+    "translation": "值长度必须最多为 {{.Value}} 个字符"
+  },
+  {
+    "id": "string.min_bytes",
+    "translation": "值长度必须至少为 {{.Value}} 字节"
+  },
+  {
+    "id": "string.min_len",
+    "translation": "值长度必须至少为 {{.Value}} 个字符"
+  },
+  {
+    "id": "string.not_contains",
+    "translation": "值包含子字符串 {{.Value}}"
+  },
+  {
+    "id": "string.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "string.pattern",
+    "translation": "值不符合正则表达式模式 {{.Value}}"
+  },
+  {
+    "id": "string.prefix",
+    "translation": "值没有前缀 {{.Value}}"
+  },
+  {
+    "id": "string.suffix",
+    "translation": "值没有后缀 {{.Value}}"
+  },
+  {
+    "id": "string.tuuid",
+    "translation": "值必须是有效的裁剪 UUID"
+  },
+  {
+    "id": "string.tuuid_empty",
+    "translation": "值为空，不是有效的裁剪 UUID"
+  },
+  {
+    "id": "string.uri",
+    "translation": "值必须是有效的 URI"
+  },
+  {
+    "id": "string.uri_empty",
+    "translation": "值为空，不是有效的 URI"
+  },
+  {
+    "id": "string.uri_ref",
+    "translation": "值必须是有效的 URI 引用"
+  },
+  {
+    "id": "string.uuid",
+    "translation": "值必须是有效的 UUID"
+  },
+  {
+    "id": "string.uuid_empty",
+    "translation": "值为空，不是有效的 UUID"
+  },
+  {
+    "id": "string.well_known_regex.header_name",
+    "translation": "值必须是有效的 HTTP 头部名称"
+  },
+  {
+    "id": "string.well_known_regex.header_name_empty",
+    "translation": "值为空，不是有效的 HTTP 头部名称"
+  },
+  {
+    "id": "string.well_known_regex.header_value",
+    "translation": "值必须是有效的 HTTP 头部值"
+  },
+  {
+    "id": "timestamp.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.gt_now",
+    "translation": "值必须大于现在"
+  },
+  {
+    "id": "timestamp.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.gte_lt",
+    "translation": "值必须大于或等于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.gte_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.gte_lte",
+    "translation": "值必须大于或等于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.gte_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.lt_now",
+    "translation": "值必须小于现在"
+  },
+  {
+    "id": "timestamp.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "timestamp.within",
+    "translation": "值必须在现在的 {{.Value}} 范围内"
+  },
+  {
+    "id": "uint32.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "uint32.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "uint32.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "uint32.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "uint32.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "uint32.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "uint32.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "uint32.gte_lt",
+    "translation": "值必须大于或等于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "uint32.gte_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "uint32.gte_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "uint32.gte_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "uint32.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "uint32.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "uint32.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "uint32.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  },
+  {
+    "id": "uint64.const",
+    "translation": "值必须等于 {{.Value}}"
+  },
+  {
+    "id": "uint64.gt",
+    "translation": "值必须大于 {{.Value}}"
+  },
+  {
+    "id": "uint64.gt_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "uint64.gt_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "uint64.gt_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "uint64.gt_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "uint64.gte",
+    "translation": "值必须大于或等于 {{.Value}}"
+  },
+  {
+    "id": "uint64.gte_lt",
+    "translation": "值必须大于 {{.Value}} 且小于 {{.Value}}"
+  },
+  {
+    "id": "uint64.gte_lt_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于 {{.Value}}"
+  },
+  {
+    "id": "uint64.gte_lte",
+    "translation": "值必须大于 {{.Value}} 且小于或等于 {{.Value}}"
+  },
+  {
+    "id": "uint64.gte_lte_exclusive",
+    "translation": "值必须大于 {{.Value}} 或小于或等于 {{.Value}}"
+  },
+  {
+    "id": "uint64.in",
+    "translation": "值必须在列表 {{.Value}} 中"
+  },
+  {
+    "id": "uint64.lt",
+    "translation": "值必须小于 {{.Value}}"
+  },
+  {
+    "id": "uint64.lte",
+    "translation": "值必须小于或等于 {{.Value}}"
+  },
+  {
+    "id": "uint64.not_in",
+    "translation": "值不能在列表 {{.Value}} 中"
+  }
+]
