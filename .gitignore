@@ -7,8 +7,8 @@ translator/testdata/pb/*.pb.go
 *.swp
 *.swo
 .idea/
-.vscode/*.json
-!.vscode/setting.json
+.vscode
+.cursor
 
 # Python
 __pycache__/
@@ -19,5 +19,9 @@ __pycache__/
 *.exe
 *.test
 coverage.out
+
+# outher
 AGENTS.md
 .DS_Store
+
+
